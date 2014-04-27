@@ -38,8 +38,8 @@ centos 6.5
  2. mv -r jena-fuseki-1.0.1 /usr/lib/fuseki
  3. cd /usr/lib/fuseki
  4. chmod +x fuseki-server s-*
- 5. export PATH = $PATH:/usr/lib/fuseki
- 6. ./fuseki-server --update --mem /ds
+ 5. export PATH=$PATH:/usr/lib/fuseki
+ 6. fuseki-server --update --mem /ds
 
   
 
