@@ -26,7 +26,21 @@ macbook pro os x 10.9.2  2.4 GHz Intel Core i5  8GB 1600 MHz DDR3
 
 Set up guest os(cent os virtual machine)
 ---
- 
+0. configuration
+centos 6.5
+
+1. Downloads
+ - [Apache Jena fuseki](http://jena.apache.org/download/index.cgi)
+ - ruby # yum install ruby
+
+2. Open and start fuseki
+ 1. tar xzvf jena-fuseki-1.0.1-distribution.tar.gz
+ 2. mv -r jena-fuseki-1.0.1 /usr/lib/fuseki
+ 3. cd /usr/lib/fuseki
+ 4. chmod +x ./fuseki-server
+ 5. chmod +x ./s-*
+ 6. export PATH = $PATH:/usr/lib/fuseki
+ 7. ./fuseki-server --update --mem /ds
 
   
 
